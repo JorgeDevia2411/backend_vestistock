@@ -34,24 +34,15 @@ API REST desarrollada con Node.js y Express para el proyecto Vestistock. El back
    npm install
    ```
 
-3. Crea un archivo `.env` en la raíz del proyecto. Puedes partir de esta plantilla y reemplazar los valores por los de tu entorno:
+3. Crea un archivo `.env.example` en la raíz del proyecto. Puedes partir de esta plantilla y reemplazar los valores por los de tu entorno:
 
    ```dotenv
    PORT=3000
-   NODE_ENV=development
-
-   PG_HOST=localhost
-   PG_PORT=5432
    PG_DATABASE=vestistock
-   PG_USER=postgres
-   PG_PASSWORD=CAMBIA_ESTA_CLAVE
-   PG_MAX_POOL=10
-   PG_IDLE_TIMEOUT=30000
-
    MONGO_URI=mongodb://localhost:27017/vestistock
    ```
 
-   Para MongoDB Atlas, asigna a `MONGO_URI` la URI de conexión proporcionada por Atlas. Asegúrate de que el nombre de la base de datos corresponda al que quieres utilizar. No compartas ni subas el archivo `.env`: está excluido de Git.
+   Para MongoDB Atlas, asigna a `MONGO_URI` la URI de conexión proporcionada por Atlas. Asegúrate de que el nombre de la base de datos corresponda al que quieres utilizar. No compartas ni subas el archivo `.env.example`: está excluido de Git.
 
 4. Comprueba que las instancias de PostgreSQL y MongoDB estén en ejecución y sean accesibles con los datos configurados.
 
